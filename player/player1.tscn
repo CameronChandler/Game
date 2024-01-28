@@ -1,14 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://c4l7h0yvedn0c"]
+[gd_scene load_steps=4 format=3 uid="uid://bhslu5a4tvxe2"]
 
-[ext_resource type="Script" path="res://player/player.gd" id="1_uw5va"]
+[ext_resource type="Script" path="res://player/player1.gd" id="1_bml4n"]
 [ext_resource type="Texture2D" uid="uid://dksxvxy3t4bp1" path="res://images/player placeholder.png" id="2_jgoyt"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q6kdl"]
 radius = 18.0
 height = 52.0
 
-[node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_uw5va")
+[node name="Player1" type="CharacterBody2D"]
+script = ExtResource("1_bml4n")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.205, 0.205)

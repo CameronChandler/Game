@@ -1,15 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://uq787hfgd55q"]
+[gd_scene load_steps=4 format=3 uid="uid://uq787hfgd55q"]
 
-[ext_resource type="PackedScene" uid="uid://bhslu5a4tvxe2" path="res://player/player.tscn" id="1_b7chp"]
+[ext_resource type="PackedScene" uid="uid://bhslu5a4tvxe2" path="res://player/player1.tscn" id="1_b7chp"]
 [ext_resource type="Texture2D" uid="uid://cmxl60asuhri5" path="res://images/background placeholder.jpg" id="2_2os16"]
+[ext_resource type="PackedScene" uid="uid://05f43a80fqgj" path="res://player/player2.tscn" id="3_2smc0"]
 
 [node name="main" type="Node2D"]
-
-[node name="Player" parent="." instance=ExtResource("1_b7chp")]
-position = Vector2(595, 324)
 
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -10
 position = Vector2(578, 326.5)
 scale = Vector2(3.86667, 3.91071)
 texture = ExtResource("2_2os16")
+
+[node name="Player1" parent="." instance=ExtResource("1_b7chp")]
+position = Vector2(291, 203)
+
+[node name="Player2" parent="." instance=ExtResource("3_2smc0")]
+position = Vector2(739, 268)
