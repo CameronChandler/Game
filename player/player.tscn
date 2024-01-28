@@ -16,3 +16,7 @@ texture = ExtResource("2_jgoyt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_q6kdl")
+
+[node name="GremlinTimer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true

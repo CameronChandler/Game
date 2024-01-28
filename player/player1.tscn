@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bhslu5a4tvxe2"]
+[gd_scene load_steps=4 format=3 uid="uid://djcoeaatmcne3"]
 
 [ext_resource type="Script" path="res://player/player1.gd" id="1_bml4n"]
 [ext_resource type="Texture2D" uid="uid://dksxvxy3t4bp1" path="res://images/player placeholder.png" id="2_jgoyt"]
@@ -16,3 +16,7 @@ texture = ExtResource("2_jgoyt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_q6kdl")
+
+[node name="GremlinTimer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
