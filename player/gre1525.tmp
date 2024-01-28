@@ -1,14 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://8xh7oxmx0y2l"]
+[gd_scene load_steps=4 format=3 uid="uid://8xh7oxmx0y2l"]
 
 [ext_resource type="Script" path="res://player/gremlin.gd" id="1_3iiyn"]
 [ext_resource type="Texture2D" uid="uid://dksxvxy3t4bp1" path="res://images/player placeholder.png" id="2_us0s0"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pdae4"]
 radius = 126.396
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xc24y"]
-radius = 9.0
-height = 24.0
 
 [node name="Gremlin" type="CharacterBody2D"]
 script = ExtResource("1_3iiyn")
@@ -17,14 +13,7 @@ script = ExtResource("1_3iiyn")
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_us0s0")
 
-[node name="View" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="View"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_pdae4")
-
-[node name="TargetTimer" type="Timer" parent="."]
-wait_time = 3.0
-autostart = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_xc24y")

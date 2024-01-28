@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://player/player2.gd" id="1_0qevg"]
 [ext_resource type="Texture2D" uid="uid://dsfrqwng6puo5" path="res://images/player 2 placeholder.jpg" id="2_pgiyy"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q6kdl"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mppcd"]
 radius = 18.0
 height = 52.0
 
@@ -11,12 +11,12 @@ height = 52.0
 script = ExtResource("1_0qevg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(-0.205, 0.205)
+scale = Vector2(0.205, 0.205)
 texture = ExtResource("2_pgiyy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_q6kdl")
 
 [node name="GremlinTimer" type="Timer" parent="."]
 wait_time = 5.0
 autostart = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_mppcd")

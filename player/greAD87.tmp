@@ -22,9 +22,11 @@ texture = ExtResource("2_us0s0")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="View"]
 shape = SubResource("CircleShape2D_pdae4")
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_xc24y")
+
 [node name="TargetTimer" type="Timer" parent="."]
 wait_time = 3.0
 autostart = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_xc24y")
